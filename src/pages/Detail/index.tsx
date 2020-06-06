@@ -20,6 +20,7 @@ interface Data {
     city: string;
     uf: string;
     image: string;
+    imageUrl: string;
   };
   items: {
     title: string;
@@ -70,7 +71,7 @@ const Detail = () => {
         <Image 
           style={styles.pointImage}
           source={{ 
-            uri: point.image
+            uri: point.imageUrl
           }} 
         />
         <Text style={styles.pointName}>{point.name}</Text>
